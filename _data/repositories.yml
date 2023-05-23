@@ -1,12 +1,8 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - lascavana
 
 github_repos:
-  - alshedivat/al-folio
-  - twbs/bootstrap
-  - jekyll/jekyll
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - jpswalsh/academicons
-  - mathjax/MathJax
+  - lascavana/rl2branch
+  - lascavana/GeneralizedBasisReduction
+  - lascavana/FrobeniusNum
+  - lascavana/pyscipopt-tutorials

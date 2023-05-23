@@ -3,27 +3,100 @@
 
 @string{aps = {American Physical Society,}}
 
-@book{einstein1956investigations,
-  bibtex_show={true},
-  title={Investigations on the Theory of the Brownian Movement},
-  author={Einstein, Albert},
-  year={1956},
-  publisher={Courier Corporation},
-  preview={brownian-motion.gif}
+@article{Aardal2023,
+title = {A study of lattice reformulations for integer programming},
+journal = {Operations Research Letters},
+year = {2023},
+issn = {0167-6377},
+doi = {https://doi.org/10.1016/j.orl.2023.05.001},
+html = {https://www.sciencedirect.com/science/article/pii/S0167637723000652},
+author = {Karen Aardal and Lara Scavuzzo and Laurence A. Wolsey},
+keywords = {Integer optimization, lattice-based reformulation, branching on general disjunctions},
+abstract = {Branch-and-bound for integer optimization typically uses single-variable disjunctions. Enumerative methods for integer optimization with theoretical guarantees use a non-binary search tree with general disjunctions based on lattice structure. These disjunctions are expensive to compute and challenging to implement. Here we compare two lattice reformulations that can be used to heuristically obtain general disjunctions in the original space, we develop a new lattice-based variant, and compare the derived disjunctions computationally with those produced by the algorithm of Lovász and Scarf.},
+selected={true},
+abbr={OR Letters},
+bibtex_show={true},
 }
 
-@article{einstein1950meaning,
-  abbr={AJP},
+@article{Scavuzzo2022,
+  title={Learning to branch with Tree MDPs},
+  author={Scavuzzo, Lara and Chen, Feng and Ch{\'e}telat, Didier and Gasse, Maxime and Lodi, Andrea and Yorke-Smith, Neil and Aardal, Karen},
+  journal={Advances in Neural Information Processing Systems},
+  volume={35},
+  pages={18514--18526},
+  year={2022},
+  abbr={NeurIPS},
   bibtex_show={true},
-  title={The meaning of relativity},
-  author={Einstein, Albert and Taub, AH},
-  journal={American Journal of Physics},
-  volume={18},
-  number={6},
-  pages={403--404},
-  year={1950},
-  publisher={American Association of Physics Teachers}
+  html={https://proceedings.neurips.cc/paper_files/paper/2022/hash/756d74cd58592849c904421e3b2ec7a4-Abstract-Conference.html},
+  abstract={State-of-the-art Mixed Integer Linear Programming (MILP) solvers combine systematic tree search with a plethora of hard-coded heuristics, such as branching rules. While approaches to learn branching strategies have received increasing attention and have shown very promising results, most of the literature focuses on learning fast approximations of the strong branching rule. Instead, we propose to learn branching rules from scratch with Reinforcement Learning (RL). We revisit the work of Etheve et al. (2020) and propose a generalization of Markov Decisions Processes (MDP), which we call tree MDP, that provides a more suitable formulation of the branching problem. We derive a policy gradient theorem for tree MDPs that exhibits a better credit assignment compared to its temporal counterpart. We demonstrate through computational experiments that this new framework is suitable to tackle the learning-to-branch problem in MILP, and improves the learning convergence.},
+  selected={true}
 }
+
+@inproceedings{Gasse2022,
+  title={The machine learning for combinatorial optimization competition (ml4co): Results and insights},
+  author={Gasse, Maxime and Bowly, Simon and Cappart, Quentin and Charfreitag, Jonas and Charlin, Laurent and Ch{\'e}telat, Didier and Chmiela, Antonia and Dumouchelle, Justin and Gleixner, Ambros and Kazachkov, Aleksandr M and Khalil, Elias and Lichocki, Pawel and Lodi, Andrea and Lubin, Miles and Maddison, Chris J. and Morris, Christopher and Papageorgiou, Dimitri J. and Parjadis, Augustin and Pokutta, Sebastian and Prouvost, Antoine and Scavuzzo, Lara and Zarpellon, Giulia},
+  booktitle={NeurIPS 2021 Competitions and Demonstrations Track},
+  pages={220--231},
+  year={2022},
+  organization={PMLR},
+  bibtex_show={true},
+  html={https://proceedings.mlr.press/v176/gasse22a/gasse22a.pdf},
+  abstract={Combinatorial optimization is a well-established area in operations research and computer science. 
+Until recently, its methods have focused on solving problem instances in isolation, ignoring that
+they often stem from related data distributions in practice. However, recent years have seen a
+surge of interest in using machine learning as a new approach for solving combinatorial problems,
+either directly as solvers or by enhancing exact solvers. Based on this context, the ML4CO aims
+at improving state-of-the-art combinatorial optimization solvers by replacing key heuristic
+components. The competition featured three challenging tasks: finding the best feasible solution,
+producing the tightest optimality certificate, and giving an appropriate solver configuration.
+Three realistic datasets were considered: balanced item placement, workload apportionment, and
+maritime inventory routing. This last dataset was kept anonymous for the contestants.},
+  preview={competition.png}
+}
+
+
+@article{Prouvost2020,
+  title={Ecole: A gym-like library for machine learning in combinatorial optimization solvers},
+  author={Prouvost, Antoine and Dumouchelle, Justin and Scavuzzo, Lara and Gasse, Maxime and Ch{\'e}telat, Didier and Lodi, Andrea},
+  journal={arXiv preprint arXiv:2011.06069},
+  year={2020},
+  bibtex_show={true},
+  html={https://arxiv.org/pdf/2011.06069.pdf},
+  abstract={We present Ecole, a new library to simplify machine learning research for combinatorial optimization. Ecole exposes several key decision tasks arising in generalpurpose combinatorial optimization solvers as control problems over Markov
+decision processes. Its interface mimics the popular OpenAI Gym library and is
+both extensible and intuitive to use. We aim at making this library a standardized
+platform that will lower the bar of entry and accelerate innovation in the field.
+Documentation and code can be found at https://www.ecole.ai.},
+  preview={ecole-logo.png}
+}
+
+
+@article{Inesta2023,
+  title={Optimal entanglement distribution policies in homogeneous repeater chains with cutoffs},
+  author={I{\~n}esta, {\'A}lvaro G and Vardoyan, Gayane and Scavuzzo, Lara and Wehner, Stephanie},
+  journal={npj Quantum Information},
+  volume={9},
+  number={1},
+  pages={46},
+  year={2023},
+  publisher={Nature Publishing Group UK London},
+  bibtex_show={true},
+  html={https://www.nature.com/articles/s41534-023-00713-9},
+  abstract={We study the limits of bipartite entanglement distribution using a chain of quantum repeaters that have quantum memories. To generate end-to-end entanglement, each node can attempt the generation of an entangled link with a neighbor, or perform an entanglement swapping measurement. A maximum storage time, known as cutoff, is enforced on the memories to ensure high-quality entanglement. Nodes follow a policy that determines when to perform each operation. Global-knowledge policies take into account all the information about the entanglement already produced. Here, we find global-knowledge policies that minimize the expected time to produce end-to-end entanglement. Our methods are based on Markov decision processes and value and policy iteration. We compare optimal policies to a policy in which nodes only use local information. We find that the advantage in expected delivery time provided by an optimal global-knowledge policy increases with increasing number of nodes and decreasing probability of successful swapping.},
+  preview={entanglement.png}
+}
+
+
+@article{Schweickert2018,
+  title={Electromagnetically induced transparency of on-demand single photons in a hybrid quantum network},
+  author={Schweickert, Lucas and J{\"o}ns, Klaus D and Namazi, Mehdi and Cui, Guodong and Lettner, Thomas and Zeuner, Katharina D and Montana, Lara Scavuzzo and da Silva, Saimon Filipe Covre and Reindl, Marcus and Huang, Huiying and others},
+  journal={arXiv preprint arXiv:1808.05921},
+  year={2018},
+  bibtex_show={true},
+  html={https://arxiv.org/abs/1808.05921},
+  abstract={Long range quantum communication and quantum information processing require the development of light-matter interfaces for distributed quantum networks. Even though photons are ideal candidates for network links to transfer quantum information, the system of choice for the realization of quantum nodes has not been identified yet. Ideally, one strives for a hybrid network architecture, which will consist of different quantum systems, combining the strengths of each system. However, interfacing different quantum systems via photonic channels remains a major challenge because a detailed understanding of the underlying light-matter interaction is missing. Here, we show the coherent manipulation of single photons generated on-demand from a semiconductor quantum dot using a rubidium vapor quantum memory, forming a hybrid quantum network. We demonstrate the engineering of the photons' temporal wave function using four-level atoms and the creation of a new type of electromagnetic induced transparency for quantum dot photons on resonance with rubidium transitions. Given the short lifetime of our quantum dot transition the observed dynamics cannot be explained in the established steady-state picture. Our results play a pivotal role in understanding quantum light-matter interactions at short time scales. These findings demonstrate a fundamental active node to construct future large-scale hybrid quantum networks.}
+}
+
 
 @article{PhysRev.47.777,
   abbr={PhysRev},
@@ -44,35 +117,8 @@
   pdf={example_pdf.pdf},
   altmetric={248277},
   dimensions={true},
-  selected={true}
 }
 
-@article{einstein1905molekularkinetischen,
-  title={{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author={Einstein, A.},
-  journal={Annalen der physik},
-  volume={322},
-  number={8},
-  pages={549--560},
-  year={1905},
-  publisher={Wiley Online Library}
-}
-
-@article{einstein1905movement,
-  abbr={Ann. Phys.},
-  title={Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author={Einstein, A.},
-  journal={Ann. Phys.},
-  volume={17},
-  pages={549--560},
-  year={1905}
-}
-
-@article{einstein1905electrodynamics,
-  title={On the electrodynamics of moving bodies},
-  author={Einstein, A.},
-  year={1905}
-}
 
 @book{przibram1967letters,
   bibtex_show={true},
